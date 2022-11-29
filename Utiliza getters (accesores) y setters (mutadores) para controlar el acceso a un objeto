@@ -52,15 +52,15 @@ Esperando:Llamar al setter con un valor Celsius debe establecer temperature.
 */
 // Cambia solo el código debajo de esta línea
 class Thermostat {
-  constructor(){
-    this.fahrenheti = farenheit;
+  constructor(fahrenheit){
+    this.fahrenheti = fahrenheit;
   }
   //getter
   get temperature() {
     return (5/9) * (this.fahrenheit - 32);
   } 
   //setter
-  set temperature(){
+  set temperature(celcius){
     this.fahrenheit = (celcius * 9.0) / 5 + 32; 
   }
 }
